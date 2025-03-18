@@ -1,0 +1,61 @@
+.CATheme_main{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 3rem 1rem;
+    margin-bottom: 5rem;
+}
+.CATheme_main h2{
+    text-align: center;
+}
+.theme_display{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    padding: 2rem 0;
+}
+.theme_card{
+    border: 1px solid var(--platinum);
+    border-radius: var(--card-border-radius);
+    padding: 0.5rem;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.theme_card:hover{
+    box-shadow: none;
+}
+.theme_card .image{
+    border-radius: 4px;
+    overflow: hidden;
+    height: 20vh;
+    width: 90%;
+}
+.theme_card .image img{
+    display: block;
+    height: 20vh;
+    width: 100%;
+}
+.theme_card .action{
+    display: flex;
+    gap: 1.2rem;
+    padding: 0.8rem 1.3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.theme_card .action > *{
+    border: 1px solid var(--platinum);
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 12px;
+}
+.theme_card .action .active{
+    border: 2px solid var(--color-success);
+}

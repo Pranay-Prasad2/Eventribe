@@ -1,0 +1,38 @@
+
+.about_banner{margin-block-end: 30px;}
+.tabout .section_title{margin-inline: 0;}
+.tabout .underline::before{
+    left: 0;
+    transform: translateX(0);
+}
+.about_text{
+    font-size: 1.8rem;
+    margin-block-end: 20px;
+}
+.stats_list{
+    display: grid;
+    gap: 30px;
+}
+.stats_card{
+    text-align: center;
+    padding: 15px;
+    box-shadow: var(--shadow);
+    border-radius: var(--radius-12);
+}
+.stats_title{
+    color: var(--st-patricks-blue);
+    font-size: var(--fs-2);
+    font-weight: var(--fw-700);
+}
+.stats_text{
+    font-size: var(--fs-8);
+}
+
+@media (min-width: 1200px){
+    .stats_list { grid-template-columns: repeat(3, 1fr); }
+    .tabout .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}

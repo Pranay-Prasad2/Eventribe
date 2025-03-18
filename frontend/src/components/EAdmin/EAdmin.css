@@ -1,0 +1,369 @@
+
+.EAdmin_main{
+    outline: 0;
+    appearance: none;
+    border: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--color-background);
+    user-select: none;
+    overflow-x: hidden;
+}
+
+.anchor_tag{
+    color: var(--color-dark);
+}
+.img_tag{
+    display: block;
+    width: 100%;
+}
+.h1{
+    font-weight: 600;
+    font-size: 3rem;
+}
+.h2{
+    font-size: 2rem;
+}
+.h3{
+    font-size: 1.5rem;
+}
+.h4{
+    font-size: 1.2rem;
+}
+.h5{
+    font-size: 1rem;
+}
+.small{
+    font-size: 0.9rem;
+}
+.text-muted{
+    color: var(--color-info-dark);
+}
+.p{
+    color: var(--color-dark-variant);
+}
+.b{
+    color: var(--color-dark);
+}
+.primary{
+    color: var(--color-primary);
+}
+.danger{
+    color: var(--color-danger);
+}
+.success{
+    color: var(--color-success);
+}
+.warning{
+    color: var(--color-warning);
+}
+.Eadmin_container{
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 23rem ;
+}
+aside{
+    height: 100vh;
+}
+aside .Eadmin_logo{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+aside .Eadmin_logo .logo_icn{
+    display: none;
+}
+.logo_icn{
+    font-size: 3rem;
+    color: rgb(239, 14, 81);
+}
+aside .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+aside .Eadmin_close{
+    display: none;
+}
+
+aside .Eadmin_sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 86vh;
+    position: relative;
+    
+}
+aside .Eadmin_sidebar .anchor_tag .h3{
+    font-weight: 500;
+}
+aside .Eadmin_sidebar .anchor_tag{
+    display: flex;
+    color: var(--color-info-dark);
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transition: all 300ms ease;
+}
+aside .Eadmin_sidebar .anchor_tag .icn{
+    font-size: 1.8rem;
+    transition: all 300ms ease;
+}
+aside .Eadmin_sidebar .anchor_tag:last-child{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+}
+
+aside .Eadmin_sidebar a.actives{
+    background: var(--color-light);
+    color: var(--color-primary);
+    margin-left: 0;
+}
+aside .Eadmin_sidebar a.actives:before{
+    content: "";
+    width: 6px;
+    height: 100%;
+    background: var(--color-primary);
+}
+aside .Eadmin_sidebar a.actives .icn{
+    color: var(--color-primary);
+    margin-left: calc(1rem-3px);
+}
+aside .Eadmin_sidebar a:hover{
+    color: var(--color-primary);
+}
+aside .Eadmin_sidebar a:hover .icn{
+    margin-left: 1rem;
+}
+
+
+/* Main section */
+
+main{
+    margin-top: 5rem;
+    height: 93vh;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+main .insight{
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    gap: 1.6rem;
+}
+main .insight >div{
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius) ;
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+main .insight > div:hover{
+    box-shadow: none;
+}
+main .insight > div .insight_icon{
+    background: var(--color-primary);
+    color: var(--color-white);
+    font-size: 2rem;
+    padding: 0.5rem;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+main .insight .Total_Events .insight_icon{
+    background: var(--color-danger);
+}
+main .insight .revenue .insight_icon{
+    background: var(--color-success);
+}
+
+main .insight>div .middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main .insight h3{
+    margin: 1rem 0 0.6rem;
+    font-size: 2rem;
+}
+main .insight .progress{
+    position: relative;
+    width: 103px;
+    height: 110px;
+    border-radius: 50%;
+}
+main .insight svg{
+    width: 9rem;
+    height: 9rem;
+}
+main .insight svg circle{
+    fill: none;
+    stroke: var(--color-primary);
+    stroke-width: 14;
+    stroke-linecap: round;
+    transform: translate(5px,5px);
+}
+main .insight .users svg circle{
+    stroke-dashoffset: -30;
+    stroke-dasharray: 200;
+}
+main .insight .Total_Events svg circle{
+    stroke-dashoffset: 20;
+    stroke-dasharray: 80;
+}
+main .insight .revenue svg circle{
+    stroke-dashoffset: 35;
+    stroke-dasharray: 110;
+}
+main .insight .progress .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 88%;
+    width: 88%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .insight .progress .number p{
+    font-size: 1.5rem;
+}
+
+main .charts{
+    position: relative;
+    margin: 0 auto;
+    padding: 1.1rem;
+    background: var(--color-white);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--card-border-radius);
+    margin-top: 5rem;
+}
+main .charts h1{
+    text-align: center;
+}
+.user_list{
+    margin-top: 2rem;
+    height: 70vh;
+}
+.table_main1{
+    height: 90%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+main .user_list .user_table{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 90%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    /* border: none; */
+}
+main .user_list .user_table:hover{
+    box-shadow: none;
+}
+
+main .user_list .user_table .table_body td{
+    height: 2.8rem;
+    border-bottom: 1px solid var(--color-light);
+}
+main .user_list .user_table .table_body tr:last-child td{
+    border: none;
+}
+main .user_list a{
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    color: var(--color-primary);
+}
+
+.right{
+    margin-top: 2rem;
+}
+.right .top{
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+.right .top #right_btn{
+    display: none;
+}
+.right .theme_toggle{
+    background: var(--color-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2rem;
+    width: 5rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+}
+
+.right .theme_toggle > *{
+    font-size: 2rem;
+    width: 50%;
+    height: 100%;
+    padding: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right .theme_toggle .active{
+    background: var(--color-primary);
+    color: white;
+    border-radius: var(--border-radius-1);
+}
+.right .profile > *{
+    font-size: 3rem;
+    color: rgb(239, 14, 81);
+}
+.right .message{
+    background: white;
+    padding: 3rem;
+    margin-top: 5rem;
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+.right .message:hover{
+    box-shadow: none;
+}
+.right .message > *{
+    font-size: 3rem;
+}
+
+.right .list_user{
+    margin-top: 4rem;
+    background: white;
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    width: 100%;
+    height: 50vh;
+    overflow-y: scroll;
+}
+.right .list_user h2{
+    text-align: center;
+}
+.right .list_user .list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 1px solid var(--color-light);
+}
+.right .list_user .list:last-child{
+    border: none;
+}
+.right .list_user .list p{
+    font-size: 1.5rem;
+}

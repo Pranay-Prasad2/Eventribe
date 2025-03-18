@@ -1,0 +1,143 @@
+.Register{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: var(--gradient-1);
+    padding-top: 0;
+}
+.form_container{
+    width: 80%;
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.2rem;
+    font-size: 1.8rem;
+    padding: 3rem 0;
+    
+}
+.indiv{
+    /* display: none; */
+    width: 100%;
+}
+.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.frm{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.username{
+    width: 80%;
+}
+.username input,textarea{
+    border: 2px solid var(--space-cadet-2);
+    border-radius: var(--radius-4);
+    width: 100%;
+    padding: 2rem;
+}
+.steper_div{
+    /* margin-top: 15rem; */
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    background:var(--gradient-1);
+    height: 20vh;
+}
+.prev_next{
+    display: flex;
+    gap: 2rem;
+}
+.steper_align{
+    display: flex;
+    /* gap: 5rem; */
+}
+.step,.step_elements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.step_elements{
+    flex-direction: column;
+}
+.step1 .circle_head{
+    background-color: var(--razzmatazz);
+    color: white;
+}
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+}
+.circle_head{
+    border-radius: 50%;
+    background: var(--white);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    /* border: 1px solid black; */
+    background: var(--white);
+    height: 0.5rem;
+    width: 5rem;
+    margin-bottom: 16px;
+}
+.lines,.lineep{
+    background: var(--white);
+    height: 0.5rem;
+    width: 5rem;
+}
+.line1,.lines1{
+    background: var(--razzmatazz);
+}
+.lineep{
+    background: transparent;
+}
+.step_info{
+    color: white;
+
+}
+.payment_main{
+    height: 50vh;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.payment_main .modal{
+    display: flex;
+    gap: 2rem;
+}
+.paymentbuttons{
+    display: flex;
+    gap: 3rem;
+}
+.pay_button{
+    border: 1px solid var(--razzmatazz);
+    padding: 1.2rem;
+    border-radius: 12px;
+}
+.paymentbuttons .proceed:hover{
+    border: 1px solid var(--white);
+    background: var(--color-success);
+    color: white;
+}
+.paymentbuttons .cancel:hover{
+    border: 1px solid var(--white);
+    background: var(--color-danger);
+    color: white;
+}

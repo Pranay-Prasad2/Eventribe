@@ -1,0 +1,26 @@
+{
+  "name": "eventribemain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Server.js",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "eventribemain": "file:",
+    "express": "^4.18.1",
+    "mongodb": "^4.7.0",
+    "razorpay": "^2.8.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node Server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "14.17.6",
+    "npm": "6.14.15"
+  }
+}

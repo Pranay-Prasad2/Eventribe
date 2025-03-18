@@ -1,0 +1,29 @@
+.buy_coffee{
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+    background-color: var(--winter-sky);
+    color: var(--white);
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: var(--radius-12);
+    box-shadow: -3px 3px 15px var(--winter-sky);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    /* visibility: hidden;
+    opacity: 0; */
+    transition: var(--transition-1);
+    
+}
+.buy_coffee .coffee_icon{
+    font-size: 3rem;
+}
+.buy_coffee :hover{
+    color: var(--choco);
+}
+@media (max-width: 720px) {
+    .buy_coffee{
+        visibility: hidden;
+    }
+}

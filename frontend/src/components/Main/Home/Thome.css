@@ -1,0 +1,45 @@
+.Mhome{
+    background-image: url("../images/hero-bg-bottom.png"),
+                        url("../images/footer-bg.png"),
+                        var(--gradient-1);
+    background-repeat: no-repeat,no-repeat,no-repeat;
+    background-position: -280px bottom,center,center;
+    background-size: cover,cover,cover;
+    padding-block-start: 120px;
+    padding-block-end: var(--section-padding);
+}
+.home_content{
+    margin-block-end: 50px;
+}
+.home_title{  
+  color: var(--white);
+  font-size: var(--fs-1);
+  margin-block-end: 20px;
+}
+.home_text{
+    color: var(--white);
+    font-size: var(--fs-8);
+    margin-block-end: 30px;
+}
+@media (min-width:720px){
+    .Mhome {
+        min-height: 600px;
+        display: grid;
+        place-items: center;
+      }
+    
+      .home_content { margin-block-end: 0; }
+    
+      .Mhome .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 30px;
+      }
+}
+@media (min-width:992px){
+    .Mhome{ min-height: 700px; }
+}
+@media (min-width:1200px){
+    .Mhome { min-height: 800px; }
+}

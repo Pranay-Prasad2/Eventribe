@@ -1,0 +1,36 @@
+.Stat_main{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-bg-darklight);
+    padding: 3rem 1rem;
+}
+.Stat_main h2{
+    color: var(--color-primary1);
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+.table_main{
+    height: 70%;
+    overflow: scroll;
+    color: white;
+    background: var(--color-bg-dark);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+}
+.table_main th{
+    color: var(--color-primary1);
+}
+@media screen and (max-width: 992px) {
+    .table_main{
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+    .table_main td{
+        padding: 1rem 0;
+        text-align: center;
+    }
+}

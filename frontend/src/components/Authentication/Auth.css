@@ -1,0 +1,63 @@
+.Auth_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: 
+    url("../Main/images/footer-bg.png"),
+    var(--gradient-1);
+    background-repeat: no-repeat,no-repeat,no-repeat;
+    background-position: -280px bottom,center,center;
+    background-size: auto,cover,auto;
+    padding-block-start: 120px;
+    padding-block-end: var(--section-padding);
+}
+.authcard{
+    width: 50%;
+    height: 50vh;
+    padding: 2rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+}
+.authcard h3{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--space-cadet-2);
+}
+.partation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 100%;
+    gap: 0.5rem;
+}
+
+.imagesection{
+    background: url(./3918929.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: center;
+}
+.authcard form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    gap: 1rem;
+}
+.authcard form > input{
+    padding: 1rem;
+    border: 2px solid var(--space-cadet-2);
+    border-radius: var(--radius-4);
+}
+.authcard form > button{
+    padding: 1rem;
+    border: 1px solid var(--space-cadet-2);
+    border-radius: var(--radius-4);
+}

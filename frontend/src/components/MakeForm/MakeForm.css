@@ -1,0 +1,204 @@
+.createform{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 2px solid black;
+    height: 100vh;
+    overflow: scroll;
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+.createform_about{
+    width: 90%;
+    margin: 1rem 0;
+}
+.about_input{
+    border: 1px solid var(--platinum);
+    border-bottom: 1px solid var(--royal-blue-dark);
+    border-radius: 12px;
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 2rem;
+    outline: none;
+}
+.createform .container{
+    /* border: 2px solid var(--royal-blue-dark); */
+    border-radius: var(--radius-4);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 200vh;
+    margin: 0;
+    padding: 2rem;
+}
+.createform_header{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 2rem;
+}
+.input_field{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+.evenetname{
+    border-bottom: 1px solid var(--platinum);
+    padding: 1.2rem;
+    outline: none;
+    font-size: 2.5rem ;
+    width: 40%;
+}
+.input_container{
+    display: grid;
+    grid-template-columns: 70% 20% 5%; 
+    gap: 1.3rem;
+    border: 2px solid var(--platinum);
+    border-radius: var(--radius-12);
+    box-sizing: var(--shadow);
+    padding: 1.5rem;
+}
+.Response_switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+.Response_switch input{display: none;}
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--platinum);
+    transition: .4s;
+    border-radius: 34px;
+}
+.slider::before{
+    transition: var(--transition-1);
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 29px;
+    left: 1px;
+    background-color: var(--purple-navy);
+    border-radius: 50%;
+}
+.Response_switch input:checked+.slider{
+    background-color: var(--royal-blue-dark);
+}
+.Response_switch input:checked+.slider::before{
+    transition: var(--transition-1);
+    transform: translateX(30px);
+}
+.control_form{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 0;
+}
+.response_check{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+.response_check small{
+    font-size: 2rem;
+}
+.input_container>*{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form_input,
+.form_text{
+    border: 2px solid black;
+    margin: 1.2rem;
+}
+.input_header{
+    border: 2px solid black;
+    border-top: none;
+    border-left: none ;
+    border-right: none;
+    outline: none;
+}
+.input_values{
+    width: 100%;
+}
+.input_values > *{
+    outline: none;
+    padding: 1.2rem;
+    font-size: 2rem;
+}
+.input_icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Input_Add_new{
+    width: 100%;
+    padding: 1.2rem;
+    border: 2px solid var(--royal-blue-dark);
+    margin: 1.2rem 0 ;
+    border-radius: 12px;
+}
+.Input_Add_new:hover{
+    background-color: var(--space-cadet-1);
+    color: white;
+}
+.Publish_from{
+    padding: 1.2rem;
+    border: 1px solid var(--royal-blue-dark);
+    border-radius: var(--radius-12);
+    background-color: var(--royal-blue-dark);
+    color: white;
+}
+.icn{
+    color: var(--royal-blue-dark);
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+.input_icons>*{
+    width: max-content;
+    margin-block: 1.5rem ;
+}
+.input_selector ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+.multiple_choice{
+    width: 100%;
+}
+.multiple_ul2{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+.multiple_ul2 li{
+    display: flex;
+    gap: 1.1rem;
+}
+.answer{
+    width: max-content;
+
+}
+.Main_selector,.secondary_selector,.slelector_active{
+    padding: 1.2rem;
+    border: 1px solid var(--platinum);
+    width: 150px;
+}

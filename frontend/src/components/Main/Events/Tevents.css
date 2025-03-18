@@ -1,0 +1,55 @@
+.eventcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Event_list{
+    display: grid;
+    gap: 30px;
+    align-items: center;
+    width: 80%;
+    
+}
+.Event_card{
+    padding: 30px;
+    box-shadow: var(--shadow);
+    border-radius: var(--radius-12);
+    height: 50vh;
+    width: 100%;
+}
+.Event_card .title{
+    text-align: center;
+    margin-block-end: 15px;
+}
+.Event_card_child{
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 90%;
+}
+.Event_card_child p{
+    font-size: 1.5rem;
+}
+.event_items{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 30% 50% 20%;
+    margin: 1.2rem 0;
+    border-bottom: 1px solid var(--platinum);
+    padding: 1.2rem;
+}
+.event_item2{
+    grid-template-columns: 20% 20% 50% 15%;
+}
+.no_item{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (min-width: 992px) {
+    .Event_list{
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+    }
+}

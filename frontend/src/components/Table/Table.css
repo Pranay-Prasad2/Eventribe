@@ -1,0 +1,69 @@
+
+.Table_section{
+    height: 100vh;
+}
+.Table_section .table_main2{
+    height: 100%;
+    width: 100%;
+    margin: 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.table_container{
+    height: 60%;
+    width: 70%;
+    border: 1px solid var(--platinum);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    padding: 1.5rem;
+    margin: 1.2rem;
+}
+.table_headers{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.delete_event{
+    border: 1px solid red;
+    padding: 1.2rem;
+    box-shadow: 0 0 8px red;
+    color: red;
+}
+.table_container::-webkit-scrollbar{
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: var(--platinum);
+}
+.table_container::-webkit-scrollbar-thumb{
+    background-color: rgb(67, 67, 67);
+}
+#Response_table{
+    width: 100%;
+}
+#Response_table th{
+    height: 30px;
+    border: 1px solid var(--st-patricks-blue);
+}
+#Response_table td{
+    border: 1px solid var(--st-patricks-blue);
+    height: 40px;
+}
+th,td{
+    padding: 2rem;
+    min-width: 10vh;
+}
+.download-table-xls-button{
+    padding: 1.5rem;
+    border: 2px solid var(--color-success);
+    border-radius: var(--radius-4);
+    margin: 1.5rem;
+}
+.download-table-xls-button:hover{
+    box-shadow: var(--shadow);
+}

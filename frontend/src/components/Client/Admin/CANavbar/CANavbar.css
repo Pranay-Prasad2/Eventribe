@@ -1,0 +1,43 @@
+.CANavbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 250px;
+    background-color: var(--color-bg-dark);
+}
+.CA_logo{
+    padding: 2rem;
+    margin-top: 30px;
+}
+.CANavbar .CA_logo h2{
+    font-size: 3.5rem;
+    color: var(--color-primary1);
+}
+.CA_nav_links{
+    margin-top: 100px;
+    width: 100%;
+}
+.CA_nav_links li{
+    margin: 12px 0;
+    padding: 15px 5px;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    font-size: 2rem;
+    border: 1px solid transparent;
+    border-radius: var(--radius-4);
+    width: 100%;
+    transition: 0.1s all ease-in;
+    cursor: pointer;
+}
+.CA_nav_links li:hover{
+    transition: 0.1s all ease-in;
+    border: 1px solid var(--platinum);
+}  
+.CA_nav_links a{
+    color: white;
+}
+.CA_nav_icon{
+    color: var(--color-primary1);
+}

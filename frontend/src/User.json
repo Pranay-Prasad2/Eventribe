@@ -1,0 +1,30 @@
+[
+    {
+        "_id":"1",
+        "url":"client1",
+        "Name":"Blaze",
+        "Tagline": "Always on Fire Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        "About":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ipsa in velit amet obcaecati dolorem officia dolor tempore corrupti enim! Optio necessitatibus repudiandae est pariatur perferendis ab veniam similique quo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil recusandae tempora optio corrupti ab consectetur sit quaerat assumenda, labore laborum."
+    },
+    {
+        "_id":"2",
+        "url":"client2",
+        "Name":"Blackcurrent",
+        "Tagline": "Always on Fire Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        "About":"Blackcurrent is the organization Nulla ipsa in velit amet obcaecati dolorem officia dolor tempore corrupti enim! Optio necessitatibus repudiandae est pariatur perferendis ab veniam similique quo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil recusandae tempora optio corrupti ab consectetur sit quaerat assumenda, labore laborum. "
+    },
+    {
+        "_id":"3",
+        "url":"client3",
+        "Tagline": "Always on Fire Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        "Name":"studentnet",
+        "About":"Client3 is the organization Nulla ipsa in velit amet obcaecati dolorem officia dolor tempore corrupti enim! Optio necessitatibus repudiandae est pariatur perferendis ab veniam similique quo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil recusandae tempora optio corrupti ab consectetur sit quaerat assumenda, labore laborum. "
+    },
+    {
+        "_id":"4",
+        "url":"client4",
+        "Tagline": "Alwayjasdhasvdhfvs on Fire Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        "Name":"Aditya",
+        "About":"Client4 is the organization Nulla ipsa in velit amet obcaecati dolorem officia dolor tempore corrupti enim! Optio necessitatibus repudiandae est pariatur perferendis ab veniam similique quo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil recusandae tempora optio corrupti ab consectetur sit quaerat assumenda, labore laborum. "
+    }
+]

@@ -1,0 +1,138 @@
+.Typeform_inp{
+    border: 1px solid var(--royal-blue-dark);
+}
+.MainForm{
+    height: 100vh;
+}
+.MainForm img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -o-object-fit: cover;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(20%);
+    filter: drop-shadow(12px);
+}
+.MainSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.formArea{
+    width: 80%;
+    
+}
+.typ_frm{
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+.typ_frm-active{
+    display: block;
+    animation: slide-up 1000ms forwards, fade-in 500ms forwards;
+}
+
+.Typeform_inp{
+    padding: 0.8rem;
+    border: none;
+    border-bottom: 1px solid var(--platinum);
+    background-color: transparent;
+    outline: none;
+    color: var(--platinum);
+    font-size: 3rem;
+    margin: 3rem 0;
+}
+.multiple_ul{
+    display: flex;
+    margin: 2rem 0;
+}
+.typeform_inp{
+    background: transparent;
+    outline: none;
+    color: white;
+    margin: 3rem 0;
+}
+.inp_label{
+    color: var(--platinum);
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+.nav_btn{
+    display: flex;
+    gap: 2rem;
+}
+.radio_inp,.inp_label_radio{
+    font-size: 3rem;
+}
+.radio_inp{
+    width: max-content;
+}
+.inp_label_radio{
+    color: var(--platinum);
+}
+.mcq_option{
+    cursor: pointer;
+    border: 1px solid white;
+    width: 80px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.116);
+    border-radius: var(--radius-4);
+    color: white;
+}
+.mcq_option:hover{
+    background-color: rgba(255, 255, 255, 0.247);
+}
+.selected{
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.484);
+}
+.selected:hover{
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.484);
+}
+.btn1{
+    padding: 1.1rem;
+    border:1px solid var(--platinum);
+    color: var(--platinum);
+    border-radius: var(--radius-4);
+}   
+.btn1:hover{
+    background-color: rgba(255, 255, 255, 0.477);
+}
+.eventname,.eventabout{
+    color: white;
+    font-size: 4rem;
+    margin: 1.2rem;
+}
+.eventabout{
+    font-size: 2.5rem;
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+@keyframes slide-up {
+    0% {
+      transform: translatey(100%);
+    }
+    100% {
+      transform: translatey(0%);
+    }
+  }
